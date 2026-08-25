@@ -1,0 +1,30 @@
+version: "1.0"
+
+services:
+  basic-node:
+    build: ./node
+    container_name: nodeApp
+    image: shafaykhan/basic-node-app:latest
+    ports:
+      - "8083:3000"
+    environment:
+      - ENV_VALUE=${ENV_VALUE_NODE}
+
+  basic-py:
+    build: ./python
+    container_name: pyApp
+    image: shafaykhan/basic-python-app:latest
+    ports:
+      - "8082:3000"
+    environment:
+      - ENV_VALUE=${ENV_VALUE_PYTHON}
+
+  basic-spring:
+    build: ./spring
+    container_name: springApp
+    image: shafaykhan/basic-spring-app:latest
+    ports:
+      - "8081:8080"
+    environment:
+      - ENV_VALUE=${ENV_VALUE_SPRING}
+
