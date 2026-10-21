@@ -5,7 +5,15 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/docker/app1/spring/pom.xml" />
+        <option value="$PROJECT_DIR$/docker/app2/serviceA/pom.xml" />
+        <option value="$PROJECT_DIR$/docker/app2/serviceB/pom.xml" />
+        <option value="$PROJECT_DIR$/docker/app2/backend/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/docker/app2/serviceA/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="openjdk-21 (2)" project-jdk-type="JavaSDK">

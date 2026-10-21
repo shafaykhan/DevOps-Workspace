@@ -50,7 +50,7 @@ public class TodoService {
   }
 
   public List<TodoResponseDTO> findAll() {
-    return repository.findAll().stream()
+    return repository.findAllByOrderByUpdatedAtDesc().stream()
             .map(todo -> modelMapper.map(todo, TodoResponseDTO.class))
             .toList();
   }
